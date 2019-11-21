@@ -121,7 +121,7 @@
                 <a href="../chapter1/1.1.html">
             
                     
-                    VUE-SSR是什么？
+                    Vue-SSR是什么？
             
                 </a>
             
@@ -158,6 +158,19 @@
         <li class="chapter " data-level="1.2.4" data-path="../chapter1/1.4.html">
             
                 <a href="../chapter1/1.4.html">
+            
+                    
+                    Browsers support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../chapter1/1.5.html">
+            
+                <a href="../chapter1/1.5.html">
             
                     
                     版本说明
@@ -200,7 +213,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../chapter2/2.2.html">
+        <li class="chapter " data-level="1.3.2" data-path="../chapter2/2.7.html">
+            
+                <a href="../chapter2/2.7.html">
+            
+                    
+                    构建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter2/2.2.html">
             
                 <a href="../chapter2/2.2.html">
             
@@ -213,7 +239,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="../chapter2/2.3.html">
+        <li class="chapter " data-level="1.3.4" data-path="../chapter2/2.3.html">
             
                 <a href="../chapter2/2.3.html">
             
@@ -226,7 +252,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="../chapter2/2.4.html">
+        <li class="chapter " data-level="1.3.5" data-path="../chapter2/2.4.html">
             
                 <a href="../chapter2/2.4.html">
             
@@ -239,7 +265,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5" data-path="../chapter2/2.5.html">
+        <li class="chapter " data-level="1.3.6" data-path="../chapter2/2.5.html">
             
                 <a href="../chapter2/2.5.html">
             
@@ -252,7 +278,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.6" data-path="../chapter2/2.6.html">
+        <li class="chapter " data-level="1.3.7" data-path="../chapter2/2.6.html">
             
                 <a href="../chapter2/2.6.html">
             
@@ -346,7 +372,7 @@
                 <a href="../chapter5/">
             
                     
-                    交流讨论
+                    交流与贡献
             
                 </a>
             
@@ -400,6 +426,79 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x5E38;&#x89C1;&#x95EE;&#x9898;">&#x5E38;&#x89C1;&#x95EE;&#x9898;</h1>
+<h2 id="mini-css-extract-plugin&#x5728;ssr&#x4E0A;&#x4E0D;&#x80FD;&#x7528;">mini-css-extract-plugin&#x5728;SSR&#x4E0A;&#x4E0D;&#x80FD;&#x7528;</h2>
+<p>&#x539F;&#x56E0;&#xFF1A;&#x8FD9;&#x4E2A;&#x63D2;&#x4EF6;&#x4F1A;&#x7528;document&#x65B9;&#x6CD5;&#xFF0C;&#x5F80;&#x6A21;&#x677F;&#x63D2;&#x5165;&#x6807;&#x7B7E;&#x3002;&#x670D;&#x52A1;&#x5668;&#x6E32;&#x67D3;&#x8DD1;&#x7684;&#x662F;node.js&#x73AF;&#x5883;&#x91CC;&#x6CA1;&#x6709;document&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x5C31;&#x4F1A;&#x62A5;&#x9519;&#xFF1A;document is not defined&#x3002;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<p><code>webpack.server.config.js</code> &#x7AEF;&#x5C4F;&#x853D;</p>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x5C4F;&#x853D;&#x65B9;&#x6CD5;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ServerMiniCssExtractPlugin</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">MiniCssExtractPlugin</span> </span>{
+  getCssChunkObject(mainChunk) {
+    <span class="hljs-keyword">return</span> {};
+  }
+}
+</code></pre>
+<p><code>webpack.client.config.js</code>&#x7AEF; &#x6B63;&#x5E38;&#x4F7F;&#x7528;mini-css-extract-plugin</p>
+<h2 id="&#x96C6;&#x7FA4;&#x6A21;&#x5F0F;pm2log4js-&#x5199;&#x5165;log&#x5931;&#x8D25;">&#x96C6;&#x7FA4;&#x6A21;&#x5F0F;PM2+Log4js &#x5199;&#x5165;Log&#x5931;&#x8D25;</h2>
+<ol>
+<li>log4js&#x7684;&#x914D;&#x7F6E;&#x4E2D;&#x589E;&#x52A0;&#x8FD9;&#x4E24;&#x4E2A;&#x914D;&#x7F6E;</li>
+</ol>
+<pre><code class="lang-js">{
+    pm2: <span class="hljs-literal">true</span>,
+    pm2InstanceVar: <span class="hljs-string">&quot;INSTANCE_ID&quot;</span> <span class="hljs-comment">// &#x4E0E;pm2&#x7684;&#x914D;&#x7F6E;&#x5BF9;&#x5E94;</span>
+}
+</code></pre>
+<ol>
+<li>&#x5B89;&#x88C5;pm2-intercom;</li>
+</ol>
+<pre><code class="lang-bash">pm2 install pm2-intercom
+</code></pre>
+<h2 id="element-ui&#x7684;&#x7EC4;&#x4EF6;-el-table-&#x4E0D;&#x652F;&#x6301;&#x670D;&#x52A1;&#x7AEF;&#x6E32;&#x67D3;">element-ui&#x7684;&#x7EC4;&#x4EF6; el-table &#x4E0D;&#x652F;&#x6301;&#x670D;&#x52A1;&#x7AEF;&#x6E32;&#x67D3;</h2>
+<p>github &#x4E0A;&#x9762; elment-ui &#x5DF2;&#x7ECF;&#x63D0;issue&#xFF0C;&#x8FD8;&#x672A;&#x4FEE;&#x590D;&#x3002;&#x6682;&#x4E0D;&#x5F71;&#x54CD;&#x4E1A;&#x52A1;&#x529F;&#x80FD;</p>
+<h2 id="svg-sprite-loader-&#x5728;server&#x7AEF;&#x8F6C;&#x6362;&#x4E0D;&#x6210;&#x529F;">svg-sprite-loader &#x5728;server&#x7AEF;&#x8F6C;&#x6362;&#x4E0D;&#x6210;&#x529F;</h2>
+<p><strong>1. &#x5728;<code>entry-server.js</code>&#x4E2D;&#x628A;symbolContent &#x653E;&#x5728; <code>context</code>&#x4E2D;</strong></p>
+<pre><code class="lang-js"><span class="hljs-comment">//entry-server.js</span>
+<span class="hljs-keyword">import</span> getSvgContent <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@/util/svg-spirate&apos;</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> (context) =&gt; {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject) =&gt; {
+......
+        context.svgContent = getSvgContent() <span class="hljs-comment">// &#x628A;svg-symbol &#x4EA4;&#x7ED9;server-render</span>
+......
+}
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-comment">// @/util/svg-spirate</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> () =&gt; {
+    <span class="hljs-keyword">const</span> req = <span class="hljs-built_in">require</span>.context(<span class="hljs-string">&apos;@/icons/svg&apos;</span>, <span class="hljs-literal">false</span>, <span class="hljs-regexp">/\.svg$/</span>)
+    <span class="hljs-keyword">const</span> requireAll = requireContext =&gt; requireContext.keys().map(i =&gt; requireContext(i))
+    <span class="hljs-keyword">const</span> svgContent = requireAll(req)
+
+    <span class="hljs-keyword">let</span> symbolContent = <span class="hljs-string">&apos;&apos;</span>
+
+    svgContent.map(item =&gt; {
+        symbolContent = symbolContent + item.default.content
+    })
+
+    <span class="hljs-keyword">const</span> pageContent =
+        <span class="hljs-string">`&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; style=&quot;position: absolute; width: 0; height: 0&quot; id=&quot;__SVG_SPRITE_NODE__&quot;&gt;
+            <span class="hljs-subst">${symbolContent}</span>
+        &lt;/svg&gt;`</span>
+
+    <span class="hljs-keyword">return</span> pageContent
+}
+</code></pre>
+<p><strong>2. &#x5728;server&#x7AEF;&#x5C06; <code>svgContent</code>&#x6CE8;&#x5165;&#x5230;html&#x4E2D;</strong></p>
+<pre><code class="lang-js"><span class="hljs-comment">//renderer.renderToString &#x5F00;&#x59CB;&#x6267;&#x884C;&#x884C;entry-erver.js</span>
+    renderer.renderToString(context, (err, html) =&gt; {
+        <span class="hljs-keyword">if</span> (err) {
+            ctx.log.debug(<span class="hljs-string">`renderToString:`</span>, err)
+            <span class="hljs-keyword">return</span> reject(err)
+        }
+        <span class="hljs-keyword">const</span> svgContent = context.svgContent
+        <span class="hljs-keyword">const</span> $ = cheerio.load(html)
+        $(<span class="hljs-string">&apos;body&apos;</span>).prepend(svgContent)
+        resolve($.html())
+    })
+</code></pre>
 
                                 
                                 </section>
@@ -432,7 +531,7 @@
                 </a>
                 
                 
-                <a href="../chapter5/" class="navigation navigation-next " aria-label="Next page: 交流讨论">
+                <a href="../chapter5/" class="navigation navigation-next " aria-label="Next page: 交流与贡献">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -443,7 +542,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"常见问题","level":"1.5","depth":1,"next":{"title":"交流讨论","level":"1.6","depth":1,"path":"chapter5/README.md","ref":"chapter5/README.md","articles":[]},"previous":{"title":"异常处理","level":"1.4.3","depth":2,"path":"chapter3/3.3.md","ref":"chapter3/3.3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter4/README.md","mtime":"2019-11-21T09:22:50.538Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-21T07:05:42.209Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"常见问题","level":"1.5","depth":1,"next":{"title":"交流与贡献","level":"1.6","depth":1,"path":"chapter5/README.md","ref":"chapter5/README.md","articles":[]},"previous":{"title":"异常处理","level":"1.4.3","depth":2,"path":"chapter3/3.3.md","ref":"chapter3/3.3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter4/README.md","mtime":"2019-11-21T11:08:21.540Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-21T11:07:35.049Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
