@@ -12,7 +12,7 @@
   * [目录结构](chapter2/2.1.md)
   * [配置](chapter2/2.2.md)
   * [中间件](chapter2/2.3.md)
-  * [cookie穿透](chapter2/2.4.md)
+  * [cookies穿透](chapter2/2.4.md)
   * [HTTP请求](chapter2/2.5.md)
   * [国际化](chapter2/2.6.md)
 
