@@ -20,3 +20,7 @@
   * [应用部署](chapter3/3.1.md)
   * [log4js日志管理](chapter3/3.2.md)
   * [异常处理](chapter3/3.3.md)
+
+* [常见问题](chapter4/README.md)
+
+* [交流讨论](chapter5/README.md)
