@@ -4,7 +4,7 @@
 * [简介](README.md)
 
 * [新手指南](chapter1/README.md)
-  * [VUE-SSR是什么？](chapter1/1.1.md)
+  * [Vue-SSR是什么？](chapter1/1.1.md)
   * [为什么使用SSR ?](chapter1/1.2.md)
   * [快速开始](chapter1/1.3.md)
   * [Browsers support](chapter1/1.4.md)
@@ -26,3 +26,5 @@
 * [常见问题](chapter4/README.md)
 
 * [交流与贡献](chapter5/README.md)
+
+
