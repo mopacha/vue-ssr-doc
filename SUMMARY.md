@@ -13,6 +13,7 @@
   * [目录结构](chapter2/2.1.md)
   * [构建](chapter2/2.7.md)
   * [配置](chapter2/2.2.md)
+  * [编写通用性代码](chapter2/2.8.md)
   * [中间件](chapter2/2.3.md)
   * [cookies穿透](chapter2/2.4.md)
   * [HTTP请求](chapter2/2.5.md)

@@ -99,3 +99,6 @@ export default () => {
 	})
 ```
 
+## 关于storage、document、window的使用
+
+>在vue的生命周期函数中，beforeCreate和created会在服务端和客户端执行，其他钩子都在客户端执行，所以，如果在beforeCreate和created，或是直接在vuex和router入口文件中使用了storage、document以及window这些在浏览器端js才有的属性或对象时，就会报错。为了避免这个问题，应该在客户端渲染的钩子中执行。
