@@ -18,6 +18,14 @@
 - 自适应收缩侧边栏
 - 动态侧边栏（支持多级路由嵌套）
 - 快捷导航(标签页)
+- 组织图
+- Echart
+- .....
 
 ## 项目截图
 
+![PNG](./imgs/login.png)
+
+![PNG](./imgs/dasboard.png)
+
+![PNG](./imgs/org.png)
