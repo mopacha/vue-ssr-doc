@@ -6,3 +6,18 @@
 我希望此项目能孕育出更多上层框架，帮助开发团队和开发人员降低开发和维护成本。
 
 如果对你有所帮助，[欢迎star](https://github.com/mopacha/vue-ssr-admin)
+
+
+### 主要技术栈
+
+- NodeJS
+- Koa2 
+- Vue, Vuex, Vue-router
+- element-ui
+- Webpack4
+- axios
+- babel7
+- eslint
+- css、scss、postcss
+- pm2
+- log4j
