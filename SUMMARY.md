@@ -11,6 +11,8 @@
 
 * [版本记录](chapter1/1.5.md)
 
+* [开源贡献](chapter5/README.md)
+
 * [基础教程]
   * [快速开始](chapter2/2.0.md)
   * [源码结构图](chapter2/2.1.md)
@@ -28,6 +30,6 @@
 
 * [常见问题](chapter4/README.md)
 
-* [交流与贡献](chapter5/README.md)
+
 
 
