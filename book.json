@@ -22,39 +22,28 @@
     "plugins": [
         "-sharing",
         "-lunr", "-search", "search-plus",
-        "anchor-navigation-ex@0.1.8",
         "tbfed-pagefooter",
-        "copy-code-button",
         "versions-select",
         "theme-comscore",
         "donate",
         "theme-default",
-        "github@^2.0.0",
         "github-buttons@2.1.0"
     ],
     "pluginsConfig":{
         "theme-default": {
             "showLevel": true
         },
-        "github": {
-            "url": "https://github.com/mopacha/vue-ssr-admin"
-        },
         "github-buttons": {
             "repo": "mopacha/vue-ssr-admin",
             "types": [
                 "star"
             ],
-            "size": "large",
+            "size": "small",
             "count": false
        },
-        "anchor-navigation-ex": {
-            "isRewritePageTitle": false,
-            "tocLevel1Icon": "fa fa-hand-o-right",
-            "tocLevel2Icon": "fa fa-hand-o-right",
-            "tocLevel3Icon": "fa fa-hand-o-right"
-        },
+     
          "donate": {
-            "wechat": "https://mopacha.github.io/vue-ssr-doc/imgs/pay.png",
+            "wechat": "../imgs/pay.png",
             "title": "如果喜欢，千万别吝啬打赏~",
             "button": "赏",
             "wechatText": "微信打赏"
