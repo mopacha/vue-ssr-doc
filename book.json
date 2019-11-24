@@ -1,0 +1,76 @@
+{
+    "gitbook": ">=3.2.3",
+    "language": "zh-hans",
+    "title": "Vue SSR",
+    "description": "本项目是一套基于`NodeJS、Koa2`的`Vue SSR`解决方案，对提高首屏渲染速度、SEO优化等有明显提升。",
+    "structure": {
+        "readme": "README.md",
+        "summary": "SUMMARY.md"
+    },
+    "links": {
+        "gitbook": false,
+        "sharing": {
+            "google": false,
+            "facebook": false,
+            "twitter": false,
+            "all":false
+        },
+         "sidebar": {
+          "Home": "https://mopacha.github.io/vue-ssr-doc"
+        }
+    },
+    "plugins": [
+        "-sharing",
+        "-lunr", "-search", "search-plus",
+        "anchor-navigation-ex@0.1.8",
+        "tbfed-pagefooter",
+        "copy-code-button",
+        "versions-select",
+        "theme-comscore",
+        "donate",
+        "theme-default",
+        "github@^2.0.0",
+        "github-buttons@2.1.0"
+    ],
+    "pluginsConfig":{
+        "theme-default": {
+            "showLevel": true
+        },
+        "github": {
+            "url": "https://github.com/mopacha/vue-ssr-admin"
+        },
+        "github-buttons": {
+            "repo": "mopacha/vue-ssr-admin",
+            "types": [
+                "star"
+            ],
+            "size": "large",
+            "count": false
+       },
+        "anchor-navigation-ex": {
+            "isRewritePageTitle": false,
+            "tocLevel1Icon": "fa fa-hand-o-right",
+            "tocLevel2Icon": "fa fa-hand-o-right",
+            "tocLevel3Icon": "fa fa-hand-o-right"
+        },
+         "donate": {
+            "wechat": "https://mopacha.github.io/vue-ssr-doc/imgs/pay.png",
+            "title": "如果喜欢，千万别吝啬打赏~",
+            "button": "赏",
+            "wechatText": "微信打赏"
+        },
+        "tbfed-pagefooter": {
+            "copyright":"Copyright ©大数据项目组 2019",
+            "modify_label": "本文档更新于：",
+            "modify_format": "YYYY-MM-DD HH:mm"
+        },
+        "versions": {
+            "options": [
+                {
+                    "value": "https://mopacha.github.io/vue-ssr-doc/",
+                    "text": "v1.0"
+                }
+            ]
+        }
+    }
+}
