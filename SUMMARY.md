@@ -17,6 +17,7 @@
   * [快速开始](chapter2/2.0.md)
   * [源码结构图](chapter2/2.1.md)
   * [配置](chapter2/2.2.md)
+  * [路由](chapter2/2.3.md)
   * [编写通用性代码](chapter2/2.4.md)
 
 * [核心教程]
