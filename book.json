@@ -14,9 +14,6 @@
             "facebook": false,
             "twitter": false,
             "all":false
-        },
-         "sidebar": {
-          "Home": "https://mopacha.github.io/vue-ssr-doc"
         }
     },
     "plugins": [
