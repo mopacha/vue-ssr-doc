@@ -1,10 +1,10 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>配置 · GitBook</title>
+        <title>配置 · Vue SSR</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,17 +17,37 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-versions-select/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
         
 
     
@@ -47,6 +67,7 @@
     
 
         
+    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -57,11 +78,22 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="2.8.html" />
+    <link rel="next" href="2.3.html" />
     
     
-    <link rel="prev" href="2.7.html" />
+    <link rel="prev" href="2.1.html" />
     
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"mopacha/vue-ssr-admin","types":["star"],"size":"large","count":false};
+    </script>
 
     </head>
     <body>
@@ -71,7 +103,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
+    <input type="text" placeholder="输入并搜索" />
 </div>
 
             
@@ -82,19 +114,46 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="https://mopacha.github.io/vue-ssr-doc" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
         
         
     
-        <li class="chapter " data-level="1.1" data-path="../">
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                        <b>1.1.</b>
+                    
+                    介绍
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../">
             
                 <a href="../">
             
                     
-                    简介
+                        <b>1.1.1.</b>
+                    
+                    简 介
             
                 </a>
             
@@ -102,24 +161,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../chapter1/">
-            
-                <a href="../chapter1/">
-            
-                    
-                    新手指南
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.2.1" data-path="../chapter1/1.1.html">
+        <li class="chapter " data-level="1.1.2" data-path="../chapter1/1.1.html">
             
                 <a href="../chapter1/1.1.html">
             
+                    
+                        <b>1.1.2.</b>
                     
                     Vue SSR是什么？
             
@@ -129,10 +176,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../chapter1/1.2.html">
+        <li class="chapter " data-level="1.1.3" data-path="../chapter1/1.2.html">
             
                 <a href="../chapter1/1.2.html">
             
+                    
+                        <b>1.1.3.</b>
                     
                     为什么使用SSR ?
             
@@ -142,12 +191,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../chapter1/1.3.html">
+        <li class="chapter " data-level="1.1.4" data-path="../chapter1/1.3.html">
             
                 <a href="../chapter1/1.3.html">
             
                     
-                    快速开始
+                        <b>1.1.4.</b>
+                    
+                    项目架构
             
                 </a>
             
@@ -155,10 +206,27 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="../chapter1/1.4.html">
+        <li class="chapter " data-level="1.1.5" data-path="../chapter1/1.4.html">
             
                 <a href="../chapter1/1.4.html">
             
+                    
+                        <b>1.1.5.</b>
+                    
+                    基础功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="../chapter1/1.6.html">
+            
+                <a href="../chapter1/1.6.html">
+            
+                    
+                        <b>1.1.6.</b>
                     
                     Browsers support
             
@@ -168,57 +236,94 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5" data-path="../chapter1/1.5.html">
-            
-                <a href="../chapter1/1.5.html">
-            
-                    
-                    版本说明
-            
-                </a>
-            
-
-            
-        </li>
-    
 
             </ul>
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="./">
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../chapter1/1.5.html">
             
-                <a href="./">
+                <a href="../chapter1/1.5.html">
             
                     
-                    基础功能
+                        <b>2.1.</b>
+                    
+                    版本记录
             
                 </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    开源贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                        <b>3.1.</b>
+                    
+                    基础教程
+            
+                </span>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="2.1.html">
+        <li class="chapter " data-level="3.1.1" data-path="2.0.html">
+            
+                <a href="2.0.html">
+            
+                    
+                        <b>3.1.1.</b>
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="2.1.html">
             
                 <a href="2.1.html">
             
                     
-                    目录结构
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.2" data-path="2.7.html">
-            
-                <a href="2.7.html">
-            
+                        <b>3.1.2.</b>
                     
-                    构建
+                    源码结构图
             
                 </a>
             
@@ -226,10 +331,12 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.3" data-path="2.2.html">
+        <li class="chapter active" data-level="3.1.3" data-path="2.2.html">
             
                 <a href="2.2.html">
             
+                    
+                        <b>3.1.3.</b>
                     
                     配置
             
@@ -239,10 +346,27 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="2.8.html">
+        <li class="chapter " data-level="3.1.4" data-path="2.3.html">
             
-                <a href="2.8.html">
+                <a href="2.3.html">
             
+                    
+                        <b>3.1.4.</b>
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="2.4.html">
+            
+                <a href="2.4.html">
+            
+                    
+                        <b>3.1.5.</b>
                     
                     编写通用性代码
             
@@ -252,23 +376,40 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5" data-path="2.3.html">
-            
-                <a href="2.3.html">
-            
-                    
-                    中间件
-            
-                </a>
-            
 
+            </ul>
             
         </li>
     
-        <li class="chapter " data-level="1.3.6" data-path="2.4.html">
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
             
-                <a href="2.4.html">
+                <span>
             
+                    
+                        <b>4.1.</b>
+                    
+                    核心教程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../chapter3/3.1.html">
+            
+                <a href="../chapter3/3.1.html">
+            
+                    
+                        <b>4.1.1.</b>
                     
                     cookies穿透
             
@@ -278,10 +419,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.7" data-path="2.5.html">
+        <li class="chapter " data-level="4.1.2" data-path="../chapter3/3.2.html">
             
-                <a href="2.5.html">
+                <a href="../chapter3/3.2.html">
             
+                    
+                        <b>4.1.2.</b>
                     
                     HTTP请求
             
@@ -291,10 +434,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.8" data-path="2.6.html">
+        <li class="chapter " data-level="4.1.3" data-path="../chapter3/3.3.html">
             
-                <a href="2.6.html">
+                <a href="../chapter3/3.3.html">
             
+                    
+                        <b>4.1.3.</b>
                     
                     国际化
             
@@ -304,31 +449,14 @@
             
         </li>
     
-
-            </ul>
+        <li class="chapter " data-level="4.1.4" data-path="../chapter3/3.4.html">
             
-        </li>
-    
-        <li class="chapter " data-level="1.4" data-path="../chapter3/">
-            
-                <a href="../chapter3/">
+                <a href="../chapter3/3.4.html">
             
                     
-                    核心功能
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.4.1" data-path="../chapter3/3.1.html">
-            
-                <a href="../chapter3/3.1.html">
-            
+                        <b>4.1.4.</b>
                     
-                    应用部署
+                    中间件
             
                 </a>
             
@@ -336,10 +464,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../chapter3/3.2.html">
+        <li class="chapter " data-level="4.1.5" data-path="../chapter3/3.5.html">
             
-                <a href="../chapter3/3.2.html">
+                <a href="../chapter3/3.5.html">
             
+                    
+                        <b>4.1.5.</b>
                     
                     log4js日志管理
             
@@ -349,12 +479,29 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="../chapter3/3.3.html">
+        <li class="chapter " data-level="4.1.6" data-path="../chapter3/3.6.html">
             
-                <a href="../chapter3/3.3.html">
+                <a href="../chapter3/3.6.html">
             
                     
+                        <b>4.1.6.</b>
+                    
                     异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../chapter3/3.7.html">
+            
+                <a href="../chapter3/3.7.html">
+            
+                    
+                        <b>4.1.7.</b>
+                    
+                    应用部署
             
                 </a>
             
@@ -367,25 +514,21 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../chapter4/">
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../chapter4/">
             
                 <a href="../chapter4/">
             
                     
-                    常见问题
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6" data-path="../chapter5/">
-            
-                <a href="../chapter5/">
-            
+                        <b>5.1.</b>
                     
-                    交流与贡献
+                    常见问题
             
                 </a>
             
@@ -400,7 +543,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -433,29 +576,66 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
-<div id="book-search-results">
+<div class="search-plus" id="book-search-results">
     <div class="search-noresults">
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h1>
-<h2 id="config">config</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</a></li><ul><li><a href="#config">config</a></li><ul><li><a href="#defaultjs">default.js</a></li><li><a href="#developmentjs">development.js</a></li><li><a href="#log4jsjs">log4js.js</a></li></ul><li><a href="#appconfigjs">app.config.js</a></li></ul></ul></div><a href="#&#x914D;&#x7F6E;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x914D;&#x7F6E;"><a name="&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;</h1>
+<h2 id="config"><a name="config" class="anchor-navigation-ex-anchor" href="#config"><i class="fa fa-link" aria-hidden="true"></i></a>config</h2>
 <p>&#x9879;&#x76EE;&#x91C7;&#x7528;<code>config</code>&#x6765;&#x7BA1;&#x7406;&#x9879;&#x76EE;&#x7684;&#x914D;&#x7F6E;&#x3002;<a href="https://github.com/lorenwest/node-config" target="_blank">&#x66F4;&#x591A;&#x6587;&#x6863;</a> </p>
-<p>&#x5BF9;&#x5E94; config &#x76EE;&#x5F55;&#x4E0B;&#x3002;</p>
+<p>&#x5BF9;&#x5E94; config &#x76EE;&#x5F55;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre><code class="lang-bash">&#x251C;&#x2500;&#x2500; config <span class="hljs-comment"># &#x9879;&#x76EE;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x76EE;&#x5F55;</span>
     &#x251C;&#x2500;&#x2500; default.js <span class="hljs-comment"># &#x9ED8;&#x8BA4;&#x914D;&#x7F6E;</span>
     &#x251C;&#x2500;&#x2500; development.js <span class="hljs-comment"># &#x5F00;&#x53D1;&#x73AF;&#x5883;&#x914D;&#x7F6E;</span>
     &#x2514;&#x2500;&#x2500; <span class="hljs-built_in">log</span>4js.js <span class="hljs-comment"># log4js &#x914D;&#x7F6E;&#x9879;</span>
 </code></pre>
-<h3 id="defaultjs">default.js</h3>
+<h3 id="defaultjs"><a name="defaultjs" class="anchor-navigation-ex-anchor" href="#defaultjs"><i class="fa fa-link" aria-hidden="true"></i></a>default.js</h3>
 <p>&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x3002;</p>
-<h3 id="developmentjs">development.js</h3>
+<pre><code class="lang-js"><span class="hljs-comment">//default.js</span>
+<span class="hljs-keyword">const</span> log4js = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./log4js&apos;</span>)
+
+<span class="hljs-built_in">module</span>.exports = {
+    appName: <span class="hljs-string">&quot;vue-ssr&quot;</span>,
+    log4js: log4js,
+    staticHost: <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-comment">//http://static.cdn.com</span>
+    staticPath: <span class="hljs-string">&quot;/vue-static&quot;</span>,
+    apiHost: <span class="hljs-string">&quot;https://www.fastmock.site&quot;</span>, <span class="hljs-comment">//&#x540E;&#x7AEF;host</span>
+    apiHost2: <span class="hljs-string">&quot;http://10.114.41.200:8080&quot;</span> <span class="hljs-comment">// http://10.114.41.200:8080</span>
+}
+</code></pre>
+<h3 id="developmentjs"><a name="developmentjs" class="anchor-navigation-ex-anchor" href="#developmentjs"><i class="fa fa-link" aria-hidden="true"></i></a>development.js</h3>
 <p>&#x5F00;&#x53D1;&#x914D;&#x7F6E;&#xFF0C;&#x5728;&#x5F00;&#x53D1;&#x6A21;&#x5F0F;&#x65F6;&#xFF0C;&#x8986;&#x76D6;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x9879;&#x3002;</p>
-<h3 id="log4jsjs">log4js.js</h3>
-<p>log4js &#x914D;&#x7F6E;&#xFF0C;&#x66F4;&#x591A;&#x53C2;&#x8003;<a href="https://github.com/log4js-node/log4js-node" target="_blank">log4js&#x4F7F;&#x7528;&#x6587;&#x6863;</a></p>
-<h2 id="appconfigjs">app.config.js</h2>
+<h3 id="log4jsjs"><a name="log4jsjs" class="anchor-navigation-ex-anchor" href="#log4jsjs"><i class="fa fa-link" aria-hidden="true"></i></a>log4js.js</h3>
+<p>log4js&#x65E5;&#x5FD7;&#x914D;&#x7F6E;&#xFF0C;&#x66F4;&#x591A;&#x53C2;&#x8003;<a href="https://github.com/log4js-node/log4js-node" target="_blank">log4js&#x4F7F;&#x7528;&#x6587;&#x6863;</a></p>
+<pre><code class="lang-js"><span class="hljs-comment">//log4js.js</span>
+<span class="hljs-built_in">module</span>.exports = {
+  appenders: {
+    <span class="hljs-built_in">console</span>: {
+      type: <span class="hljs-string">&apos;console&apos;</span>
+    },
+    app: {
+      type: <span class="hljs-string">&apos;dateFile&apos;</span>,
+      filename: <span class="hljs-string">`log/vue-ssr-admin`</span>,
+      pattern: <span class="hljs-string">&apos;-yyyy-MM-dd.log&apos;</span>,
+      alwaysIncludePattern: <span class="hljs-literal">true</span>,
+      backups: <span class="hljs-number">5</span>,
+      maxLogSize: <span class="hljs-number">10485760</span>,
+      compress: <span class="hljs-literal">true</span>
+    }
+  },
+  categories: {
+    <span class="hljs-keyword">default</span>: {
+      appenders: [<span class="hljs-string">&apos;console&apos;</span>, <span class="hljs-string">&apos;app&apos;</span>],
+      level: <span class="hljs-string">&apos;debug&apos;</span>  <span class="hljs-comment">// [&apos;trace&apos;, &apos;debug&apos;, &apos;info&apos;, &apos;warn&apos;, &apos;error&apos;, &apos;fatal&apos;, &apos;mark&apos;]</span>
+    }
+  },
+  pm2: <span class="hljs-literal">true</span>,
+  pm2InstanceVar: <span class="hljs-string">&apos;INSTANCE_ID&apos;</span>
+}
+</code></pre>
+<h2 id="appconfigjs"><a name="appconfigjs" class="anchor-navigation-ex-anchor" href="#appconfigjs"><i class="fa fa-link" aria-hidden="true"></i></a>app.config.js</h2>
 <p>&#x5E94;&#x7528;&#x7684;&#x76F8;&#x5173;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5305;&#x62EC;webpack&#x7684;&#x5DEE;&#x5F02;&#x5316;&#x914D;&#x7F6E;&#x3001;&#x8BF7;&#x6C42;&#x4EE3;&#x7406;&#x914D;&#x7F6E;</p>
-<h3 id="&#x914D;&#x7F6E;&#x5B9E;&#x4F8B;">&#x914D;&#x7F6E;&#x5B9E;&#x4F8B;</h3>
 <pre><code class="lang-js"><span class="hljs-comment">//app&#x914D;&#x7F6E;</span>
 <span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>)
 <span class="hljs-keyword">const</span> conf = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./config/default&apos;</span>)
@@ -478,12 +658,13 @@
     <span class="hljs-comment">//&#x4EE3;&#x7406;&#x914D;&#x7F6E;&#xFF0C;&#x53EF;&#x652F;&#x6301;&#x591A;&#x4E2A;&#x4EE3;&#x7406;&#xFF0C;key&#x4E3A;&#x524D;&#x7F00;&#xFF0C;&#x547D;&#x4E2D;&#x540E;&#xFF0C;&#x4F1A;&#x628A;&#x524D;&#x7F00;&#x53BB;&#x6389;&#xFF0C;&#x8F6C;&#x53D1;&#x5230;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;</span>
     proxy: {
         <span class="hljs-string">&apos;/fastApp&apos;</span>: isProd ? conf.apiHost : devConf.apiHost,
-        <span class="hljs-string">&apos;/waterApp&apos;</span>: isProd ? conf.apiHost2 : devConf.apiHost2,
-        <span class="hljs-string">&apos;/bahasaApp&apos;</span>: isProd ? conf.apiHost3 : devConf.apiHost3
+        <span class="hljs-string">&apos;/coolApp&apos;</span>: isProd ? conf.apiHost2 : devConf.apiHost2,
     }
 }
 </code></pre>
-
+<footer class="page-footer"><span class="copyright">Copyright &#xA9;&#x5927;&#x6570;&#x636E;&#x9879;&#x76EE;&#x7EC4; 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x672C;&#x6587;&#x6863;&#x66F4;&#x65B0;&#x4E8E;&#xFF1A;
+2019-11-24 18:04
+</span></footer>
                                 
                                 </section>
                             
@@ -510,12 +691,12 @@
 
             
                 
-                <a href="2.7.html" class="navigation navigation-prev " aria-label="Previous page: 构建">
+                <a href="2.1.html" class="navigation navigation-prev " aria-label="Previous page: 源码结构图">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="2.8.html" class="navigation navigation-next " aria-label="Next page: 编写通用性代码">
+                <a href="2.3.html" class="navigation navigation-next " aria-label="Next page: 路由">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -526,7 +707,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"配置","level":"1.3.3","depth":2,"next":{"title":"编写通用性代码","level":"1.3.4","depth":2,"path":"chapter2/2.8.md","ref":"chapter2/2.8.md","articles":[]},"previous":{"title":"构建","level":"1.3.2","depth":2,"path":"chapter2/2.7.md","ref":"chapter2/2.7.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2/2.2.md","mtime":"2019-11-22T11:36:31.827Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-22T11:51:24.524Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"配置","level":"3.1.3","depth":2,"next":{"title":"路由","level":"3.1.4","depth":2,"path":"chapter2/2.3.md","ref":"chapter2/2.3.md","articles":[]},"previous":{"title":"源码结构图","level":"3.1.2","depth":2,"path":"chapter2/2.1.md","ref":"chapter2/2.1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","search-plus","anchor-navigation-ex@0.1.8","tbfed-pagefooter","copy-code-button","versions-select","theme-comscore","donate","theme-default","github@^2.0.0","github-buttons@2.1.0","livereload"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright ©大数据项目组 2019","modify_label":"本文档更新于：","modify_format":"YYYY-MM-DD HH:mm"},"github":{"url":"https://github.com/mopacha/vue-ssr-admin"},"livereload":{},"versions-select":{"type":"branches"},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"赏","title":"如果喜欢，千万别吝啬打赏~","wechat":"https://mopacha.github.io/vue-ssr-doc/imgs/pay.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"theme-comscore":{},"github-buttons":{"repo":"mopacha/vue-ssr-admin","types":["star"],"size":"large","count":false},"copy-code-button":{},"versions":{"options":[{"value":"https://mopacha.github.io/vue-ssr-doc/","text":"v1.0"}]},"theme-default":{"showLevel":true,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Vue SSR","language":"zh-hans","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false},"sidebar":{"Home":"https://mopacha.github.io/vue-ssr-doc"}},"gitbook":">=3.2.3","description":"本项目是一套基于`NodeJS、Koa2`的`Vue SSR`解决方案，对提高首屏渲染速度、SEO优化等有明显提升。"},"file":{"path":"chapter2/2.2.md","mtime":"2019-11-24T10:04:32.143Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-24T13:07:41.681Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -536,31 +717,43 @@
     <script src="../gitbook/theme.js"></script>
     
         
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
         <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
         
     
 
