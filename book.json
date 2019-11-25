@@ -22,7 +22,6 @@
         "tbfed-pagefooter",
         "versions-select",
         "theme-comscore",
-        "donate",
         "theme-default",
         "github-buttons@2.1.0"
     ],
@@ -38,13 +37,6 @@
             "size": "small",
             "count": false
        },
-     
-         "donate": {
-            "wechat": "../imgs/pay.png",
-            "title": "如果喜欢，千万别吝啬打赏~",
-            "button": "赏",
-            "wechatText": "微信打赏"
-        },
         "tbfed-pagefooter": {
             "copyright":"Copyright ©大数据项目组 2019",
             "modify_label": "本文档更新于：",
